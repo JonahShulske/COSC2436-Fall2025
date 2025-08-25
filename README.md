@@ -1,4 +1,4 @@
-# COSC 1436 - Programming Fundamentals I (C++)
+# COSC-2436 Fall 2025 - Programming Fundamentals III (C++)
 
 This repository is where your classwork and lab assignments will go.
 
