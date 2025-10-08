@@ -4,6 +4,7 @@
 #include <deque>
 #include <stdexcept>
 
+// Class to construct a Queue using a Deque
 class DequeQueue
 {
     private:

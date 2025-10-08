@@ -4,6 +4,7 @@
 #include <deque>
 #include <stdexcept>
 
+// Class to construct a Stack using a Deque
 class DequeStack
 {
     private:
