@@ -1,0 +1,25 @@
+Elizabeth Smith, None, 1900
+Margaret Johnson, Elizabeth Smith, 1932
+Susan Wilson, Elizabeth Smith, 1935
+Lisa Moore, Elizabeth Smith, 1935
+Sandra Miller, Margaret Johnson, 1954
+Amy Brown, Margaret Johnson, 1964
+Rebecca Davis, Margaret Johnson, 1965
+Emily White, Margaret Johnson, 1967
+Jessica Taylor, Susan Wilson, 1962
+Sophia Anderson, Susan Wilson, 1964
+Olivia Thomas, Susan Wilson, 1967
+Isabella Jackson, Lisa Moore, 1954
+Mia Harris, Sandra Miller, 1984
+Ava Martin, Sandra Miller, 1976
+Charlotte Lee, Sandra Miller, 1972
+Amelia Perez, Amy Brown, 1999
+Evelyn Thompson, Amy Brown, 1993
+Abigail Lewis, Amy Brown, 1986
+Harper Clark, Rebecca Davis, 1988
+Ella Rodriguez, Rebecca Davis, 1988
+Gianna Hall, Emily White, 1988
+Chloe Lopez, Emily White, 1998
+Victoria Gonzalez, Jessica Taylor, 1984
+Sophie Nelson, Jessica Taylor, 1992
+Aria Carter, Jessica Taylor, 1991
