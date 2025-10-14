@@ -70,7 +70,11 @@ void BuildTreeFromFile(const string& filename, GenealogyTree& tree) {
     }
 }
 
-vector<vector<TreeNode*>> LevelOrderTraversal(TreeNode* root) {
+// Traversing each level of the tree. The runtime of this function is O(N) due to having to check each element in the vector/queue
+//@param The roots of each member of the family tree
+//@return The result of all the levels of the tree
+vector<vector<TreeNode*>> LevelOrderTraversal(TreeNode* root) 
+{
         
     vector<vector<TreeNode*>> result;
     if (!root) return result;
@@ -97,7 +101,8 @@ vector<vector<TreeNode*>> LevelOrderTraversal(TreeNode* root) {
     return result;
 }
 
-bool IsDescendant(TreeNode* ancestor, TreeNode* descendant) {
+bool IsDescendant(TreeNode* ancestor, TreeNode* descendant) 
+{
     
     return false;
 }
