@@ -103,6 +103,22 @@ vector<vector<TreeNode*>> LevelOrderTraversal(TreeNode* root)
 
 bool IsDescendant(TreeNode* ancestor, TreeNode* descendant) 
 {
+    if (!ancestor || !descendant) return false;
+    if (ancestor == descendant) return true;
+
+    DequeStack<TreeNode*> stack;
+    stack.Push(ancestor);
+
+    while (!stack.IsEmpty())
+    {
+        TreeNode* node = stack.Peek();
+        stack.Pop();
+        if (node == descendant)
+            return true;
+
+        for (TreeNode* child : node->children)
+            stack.Push(child);
+    }
     
     return false;
 }

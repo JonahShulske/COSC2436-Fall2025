@@ -11,11 +11,11 @@ class DequeStack
     private:
         std::deque<T> data;
     public:
-        void Push(int value);
-        void Pop();
-        int Peek() const;
-        bool IsEmpty() const;
-        int GetLength() const;
+        void Push(const T& value) { data.push_back(value); }
+        void Pop() { if (!data.empty()) data.pop_front(); }
+        T Peek() const { return data.front(); }
+        bool IsEmpty() const { return data.empty(); }
+        int GetLength() const { return static_cast<int>(data.size()); }
 };
 
 
