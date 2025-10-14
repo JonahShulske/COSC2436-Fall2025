@@ -1,3 +1,8 @@
+/* Jonah Shulske
+ * COSC-2436 Fall 2025
+ * October 14, 2025
+ */
+
 // main.cpp
 #include <iostream>
 #include <fstream>
