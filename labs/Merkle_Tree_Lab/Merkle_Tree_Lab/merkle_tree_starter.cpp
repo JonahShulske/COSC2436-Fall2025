@@ -5,6 +5,7 @@
 #include <windows.h>
 #include <wincrypt.h>
 #pragma comment (lib, "crypt32.lib")
+using namespace std;
 
 // Function to compute MD5 hash from string input
 std::string compute_md5(const std::string& input) {
@@ -61,18 +62,45 @@ std::vector<std::string> chunk_input(const std::string& input, size_t chunk_size
 }
 
 std::string buildMerkleTree(const std::vector<std::string>& chunks) {
-    // TODO: Hash each chunk to form leaves
-    // TODO: Build the tree upward by pairing and hashing
-    // TODO: Duplicate last node if needed
-    // TODO: Return the Merkle root
+    vector<string> currentLevel;
+    for (const auto& chunk : chunks)
+        currentLevel.push_back(compute_md5(chunk));
+
+    while (currentLevel.size() > 1)
+    {
+        if (currentLevel.size() % 2 != 0)
+            currentLevel.push_back(currentLevel.back());
+
+        vector<string> nextLevel;
+        for (size_t index = 0; index < currentLevel.size(); index += 2)
+        {
+            string combined = currentLevel[index] + currentLevel[index + 1];
+            nextLevel.push_back(compute_md5(combined));
+        }
+        currentLevel = nextLevel;
+    }
+
+    return currentLevel.empty() ? "" : currentLevel[0];
     return "";
 }
 
 bool verifyProof(const std::string& targetData, const std::vector<std::pair<std::string, std::string>>& proof, const std::string& expectedRoot) {
-    // TODO: Hash targetData
-    // TODO: Use proof list (direction, sibling_hash) to recompute path
-    // TODO: Return true if final hash == expectedRoot
-    return false;
+    string currentHash = compute_md5(targetData);
+
+    for (const auto& p : proof)
+    {
+        const string& direction = p.first;
+        const string& siblingHash = p.second;
+
+        if (direction == "L")
+            currentHash = compute_md5(siblingHash + currentHash);
+        else if (direction == "R")
+            currentHash = compute_md5(currentHash + siblingHash);
+        else
+            return false;
+    }
+
+    return currentHash == expectedRoot;
 }
 
 std::string readFileToString(const std::string& filename) {
