@@ -1,0 +1,24 @@
+Current Triage Queue: Anna (55) 
+Current Triage Queue: Anna (55) Greg (40) 
+Current Triage Queue: Jasmine (80) Anna (55) Greg (40) 
+Current Triage Queue: Jasmine (80) Kai (60) Anna (55) Greg (40) 
+Current Triage Queue: Jasmine (80) Bella (70) Kai (60) Anna (55) Greg (40) 
+Current Triage Queue: Carol (100) Jasmine (80) Bella (70) Kai (60) Anna (55) Greg (40) 
+Current Triage Queue: Carol (100) Jasmine (80) Bella (70) Kai (60) Anna (55) Greg (40) Dave (10) 
+Current Triage Queue: Carol (100) Jasmine (80) Elain (75) Bella (70) Kai (60) Anna (55) Greg (40) Dave (10) 
+Next Patient: Carol
+Current Triage Queue: Jasmine (80) Elain (75) Bella (70) Kai (60) Anna (55) Greg (40) Dave (10) 
+Next Patient: Jasmine
+Current Triage Queue: Elain (75) Bella (70) Kai (60) Anna (55) Greg (40) Dave (10) 
+Next Patient: Elain
+Current Triage Queue: Bella (70) Kai (60) Anna (55) Greg (40) Dave (10) 
+Next Patient: Bella
+Current Triage Queue: Kai (60) Anna (55) Greg (40) Dave (10) 
+Next Patient: Kai
+Current Triage Queue: Anna (55) Greg (40) Dave (10) 
+Next Patient: Anna
+Current Triage Queue: Greg (40) Dave (10) 
+Next Patient: Greg
+Current Triage Queue: Dave (10) 
+Next Patient: Dave
+Current Triage Queue: 
